@@ -217,9 +217,9 @@ if (crewMass < 500) {
 */
 
 for (let i = 0; i < starWarsCharacters.length; i++) {
-  const gender = starWarsCharacters[i].gender;
-  if (gender === "n/a") {
-    gender = "robot";
+  starWarsCharacters[i].gender;
+  if (starWarsCharacters[i].gender === "n/a") {
+    starWarsCharacters[i].gender = "robot";
   }
 }
 
