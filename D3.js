@@ -229,7 +229,20 @@ console.log(starWarsCharacters);
   Utilizzando gli elementi presenti nell'array "femaleCharacters" rimuovi dall'array "charactersNames" le stringhe corrispondenti a personaggi con lo stesso nome.
   Una volta fatto crea un console.log per controllare la proprietà length di "charactersNames" prima e dopo l'operazione.
 */
+console.log(charactersNames);
 
+for (let i = 0; i < charactersNames.length; i++) {
+  const characterStr = charactersNames[i];
+
+  for (let j = 0; j < femaleCharacters.length; j++) {
+    const femaleName = femaleCharacters[j].name;
+    if (femaleName === characterStr) {
+      charactersNames.splice(femaleCharacters[i], 1);
+    }
+  }
+}
+
+console.log(charactersNames);
 /* --EXTRA-- ESERCIZIO 10
   Crea una funzionalità che selezioni un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
 */
